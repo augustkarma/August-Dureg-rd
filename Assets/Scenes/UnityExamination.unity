@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 58306892}
   - component: {fileID: 58306891}
   m_Layer: 0
-  m_Name: Right wall
+  m_Name: Right border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,9 +387,9 @@ AudioSource:
   Priority: 0
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 50
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -397,23 +397,68 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.02
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -50.01992
+      outSlope: -50.01992
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.04
+      value: 0.5
+      inSlope: -12.50498
+      outSlope: -12.50498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.077406004
+      value: 0.21949768
+      inSlope: -3.126245
+      outSlope: -3.126245
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.16
+      value: 0.125
+      inSlope: -0.78156126
+      outSlope: -0.78156126
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32
+      value: 0.0625
+      inSlope: -0.19539031
+      outSlope: -0.19539031
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.64
+      value: 0.03125
+      inSlope: -0.04884758
+      outSlope: -0.04884758
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.02
+      inSlope: -0.020007975
+      outSlope: -0.020007975
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -422,7 +467,16 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.989
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9433491
+      value: 0.009832084
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -915,7 +969,7 @@ GameObject:
   - component: {fileID: 721671840}
   - component: {fileID: 721671839}
   m_Layer: 0
-  m_Name: Left wall
+  m_Name: Left border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1430,7 +1484,7 @@ GameObject:
   - component: {fileID: 931503737}
   - component: {fileID: 931503738}
   m_Layer: 0
-  m_Name: Bottom wall
+  m_Name: Bottom border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1596,7 +1650,7 @@ SurfaceEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Speed: 500
-  m_SpeedVariation: 0
+  m_SpeedVariation: 50
   m_ForceScale: 1
   m_UseContactForce: 0
   m_UseFriction: 1
@@ -1968,7 +2022,7 @@ GameObject:
   - component: {fileID: 1104087987}
   - component: {fileID: 1104087990}
   m_Layer: 0
-  m_Name: Oil slick?
+  m_Name: Bouncy ball obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7929,7 +7983,7 @@ GameObject:
   - component: {fileID: 1585127527}
   - component: {fileID: 1585127526}
   m_Layer: 0
-  m_Name: Top wall
+  m_Name: Top border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8474,7 +8528,7 @@ GameObject:
   - component: {fileID: 1880350980}
   - component: {fileID: 1880350979}
   m_Layer: 0
-  m_Name: Particle System (1)
+  m_Name: Nom Nom Praticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13292,7 +13346,7 @@ Transform:
   m_GameObject: {fileID: 1880350978}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5024876, y: 0.4975, z: -0.4975, w: 0.5024876}
-  m_LocalPosition: {x: -8.25, y: 3.52, z: -0}
+  m_LocalPosition: {x: -8.25, y: 3.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13809,6 +13863,7 @@ SceneRoots:
   - {fileID: 1231448664}
   - {fileID: 1450810765}
   - {fileID: 1019229941}
+  - {fileID: 1880350981}
   - {fileID: 1910214130021761651}
   - {fileID: 1043950719}
   - {fileID: 2007451602}
@@ -13818,4 +13873,3 @@ SceneRoots:
   - {fileID: 1302606176}
   - {fileID: 8184778564650652372}
   - {fileID: 1104087989}
-  - {fileID: 1880350981}
